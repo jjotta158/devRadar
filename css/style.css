@@ -1,0 +1,137 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+header{
+    width:100%;
+    height:12vmin;
+    background-color: blueviolet;
+    text-align: center;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vmin;
+    font-family: "Sriracha";
+    position:fixed;
+    box-shadow: 10px 10px 10px 10px rgba(138,43,226, 0.3);    
+    transition: all .4s
+}
+header h1{
+    text-shadow:
+   0vmin -1vmin 0 darkslateblue,  
+    0vmin -1vmin 0 rgb(137, 27, 211),
+    0vmin 1vmin 0 darkslateblue,
+     0vmin 1vmin 0 darkslateblue;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+section{
+    width:50vmax;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+#leftSide{
+    width:50vmax;    
+    background-color:darkslateblue !important;
+}
+#leftSide #non {
+    position:fixed;
+    top:20%;    
+}
+#leftSide h1{
+    font-family: "Montserrat";
+    font-size: 10vmin;
+    color: blueviolet;
+}
+
+#leftSide input {
+    width: 100%;
+    height: 5vmin;
+    border: blueviolet solid 0.7vmin;
+    border-radius: 1vmin;
+    margin-bottom: 3vmin;
+    color:blueviolet;
+    text-indent: 1vmin;
+}
+
+.data{
+    margin-left:5vmin;
+}
+
+#leftSide button{
+    width: 50%;
+    padding: 0.2vmin;
+    border: 0.5vmin solid blueviolet;
+    background-color: blueviolet;
+    border-radius: 1vmin;
+    float: right;
+    color:white;
+    font-size: 5vmin;
+    font-family: "Sriracha";
+    cursor: pointer;
+}
+#rightSide{
+    width:50vmax;
+    margin-left:5vmin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top:17vmin;
+}   
+.liSide{
+    width: 40vmin;
+    height: 40vmin;
+    margin-right: 5vmin;
+    margin-bottom:5vmin;
+    border-radius: 1.5vmin;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 5px rgba(138,43,226, 0.3);    
+    border:0.7vmin solid blueviolet;
+}
+.foto img{
+    width:40vmin;
+    height:20vmin;
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
+}
+.liSide .data {
+    font-family: "Ubuntu";
+    font-size: x-large;
+    color:blueviolet;
+    height:16vmin;
+}
+#apagarSide{
+    width:100%;
+    height:5vmin;
+    justify-self: flex-end;
+    background-color: blueviolet;
+}
+#apagar{
+    color:white;
+    background-color: transparent;
+    border: none;    
+    float:right;
+    margin-top:1vmin;
+    margin-right: 1vmin;
+    font-size: 3vmin;
+    font-family: "ubuntu";
+}
+h6{
+    text-indent:2vmin
+}
+#headerText{
+    transition: all .4s
+}
+

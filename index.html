@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="omnistack">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Omnistack</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="application/javascript" src="../listaTelefonica/angular/angular.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Sriracha|Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="omnistackController">
+    <header id="hehe">
+        <h1 id="headerText">OmniList</h1>
+    </header>
+    <main>
+        <section id="leftSide">
+            <div id="non">
+                <h1>Cadastro</h1>
+            <br>
+            <form name="contatoForm">
+                <input type="text" placeholder="Digite o seu username do github" id="username" ng-required="true">
+                <br>
+                <input type="text" placeholder="Digite as tecnologias com o que você trabalha" id="techs" ng-required="true">
+                <br>
+                <div>
+                    <input type="text" placeholder="Latitude" id="latitude" ng-required="true">
+                    <input type="text" placeholder="Longitude" id="longitude" ng-required="true">
+                </div>
+                <button ng-click="insertUser()"> Enviar </button>
+            </form>
+            </div>            
+        </section>
+        <section id="rightSide">
+            <div  ng-repeat="user in users">
+                <li class="liSide">
+                    <div class="foto">
+                        <img src="{{user.avatar_url}}" alt="">
+                    </div>
+                    <div class="data">
+                        <br>
+                        <h6>{{user.name}}</h6>
+                        <h6>{{user.github_username}}</h6>    
+                        <p>{{user.techs}}</p>
+                    </div>
+                    <div id="apagarSide">
+                        <button id="apagar">Apagar</button>
+                    </div>                    
+                </li>
+            </div>           
+        </section>
+    </main>
+    <script src="js/controller.js"></script>
+</body>
+</html>
